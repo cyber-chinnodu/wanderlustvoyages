@@ -1,0 +1,81 @@
+/* General Styling */
+@font-face {
+    font-family: danson;
+    src: url('fonts/SFPRODISPLAYREGULAR.OTF');
+  }
+body {
+    font-family: danson;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/banner.png') no-repeat center center/cover;
+
+    height: 90vh;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(17, 157, 164, 0.5);
+    height: max-content;
+    width: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay{
+    background: rgba(17, 157, 164, 0.5);
+    height: max-content;
+    width: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+
+/* Responsive Image Size */
+.hw {
+    width: 100%;  /* Makes image fully responsive */
+    height: 15em; /* Keeps a fixed height */
+    object-fit: cover; /* Ensures images do not stretch */
+    border-radius: 5px;
+}
+
+/* Adjust height for smaller screens */
+@media (max-width: 768px) {
+    .hw {
+        height: 12em; /* Reduce height on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .hw {
+        height: 10em; /* Reduce height on mobile screens */
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.myfooter{
+    background-color: #000000;
+}
+footer a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #80DED9; /* Light blue-green color from your palette */
+}
